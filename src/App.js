@@ -1,17 +1,17 @@
  import { Routes,Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Login from "./pages/Login";
 import Header from "./pages/Header";
-import "./Mainfile.css"
+import AddNotes from "./pages/AddNotes";
+import "./App.css"
 function App() {
   return (
     <div >
-       <div  className="header">
+       <div>
         <Header/>
        </div>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route   path="/login" element={<Login/>}/>
+        <Route   path="/notes" element={<AddNotes/>}/>
       </Routes>
     </div>
   );
